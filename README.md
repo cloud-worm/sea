@@ -1,5 +1,5 @@
 <p align="center">
-<img src="sea.png" width="456" height="256" style="text-align: center" />
+<h1>sea</h1>
 </p>
 
 <p align="center">
