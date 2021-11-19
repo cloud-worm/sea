@@ -59,7 +59,7 @@ end run
 This example creates an integer `a`, which is equal to 10, and a pointer integer `*b` that points to `a`; it also instantiates a pointer `c` which points to 5 on the heap. Then `b` is set to point to `*c`, effectively setting `a` to 5. Eventually all pointers are deallocated, to avoid a memory leak.
 ```cpp
 #include <iostream>
-#include "WeirdSyntax.h"
+#include "sea.h"
 
 start run
 
