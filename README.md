@@ -1,5 +1,5 @@
 <p align="center">
-<h1>sea</h1>
+<h1 align="center">sea</h1>
 </p>
 
 <p align="center">
