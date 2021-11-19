@@ -34,3 +34,23 @@ sea.h
 #define out      <<
 ...
 ```
+
+Furthermore, some keywords in sea are overwritten, such as the `if` keyword. This means that when using sea, `if` will represent a macro that will expand to another piece of code (in `if`'s case, it expands to the `if` keyword itself, slightly modified — you can check in `sea.h`). Once again, you can modify the name of the macro (to `whatif`, for example...?).
+
+<br />
+
+### sea examples
+
+This example prints "Hello, World!" to the console.
+```cpp
+#include <iostream>
+#include "sea.h"
+
+start run
+	
+	std sub cout
+		out "Hello, World!" __
+		
+	return 0 __
+
+end run
