@@ -54,3 +54,40 @@ start run
 	return 0 __
 
 end run
+```
+
+This example creates an integer `a`, which is equal to 10, and a pointer integer `*b` that points to `a`; it also instantiates a pointer `c` which points to 5 on the heap. Then `b` is set to point to `*c`, effectively setting `a` to 5. Eventually all pointers are deallocated, to avoid a memory leak.
+```cpp
+#include <iostream>
+#include "WeirdSyntax.h"
+
+start run
+
+	int a to 10 __
+	
+	std sub cout 
+		out "a = " 
+		out a
+		out "\n" __
+	// "a = 10"
+	
+	int point b to ref a __
+	int point c to new int __
+	
+	point c to 5 __
+
+	point b to point c __
+	
+	std sub cout 
+		out "a = " 
+		out a
+		out "\n" __
+	// "a = 5"
+	
+	dealloc c __
+	dealloc b __
+	
+	return 0 __
+
+end run
+```
