@@ -1,8 +1,9 @@
 <p align="center">
-  <h1>sea</h1>
+<h1>sea</h1>
 </p>
+
 <p align="center">
-  <h3>A new syntax for C &amp; C++, in one header file</h3>
+<h3>A new syntax for C &amp; C++, in one header file</h3>
 </p>
 
 <br />
